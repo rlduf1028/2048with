@@ -1,0 +1,16 @@
+
+npx http-server C:/Users/SKTelecom/Desktop/YK/Dev/2048with/2048with_Client/build/web-mobile -p 8080
+
+
+
+
+
+
+## 로컬서버 실행
+node C:\Users\SKTelecom\Desktop\YK\Dev\2048with\2048with_Server\index.js
+
+## ngrok 터널링
+ngrok http 8080
+
+## ngrok 도메인(1개 고정)
+https://wakefully-wagonless-tyron.ngrok-free.dev

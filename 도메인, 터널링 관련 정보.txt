@@ -1,0 +1,26 @@
+
+ㅁ GoDaddy에서 만든 내 도메인
+2048with.site
+
+ㅁ Cloudflare 네임서버
+cesar.ns.cloudflare.com
+christina.ns.cloudflare.com
+
+ㅁ Cloudflared 터널 정보
+이름 : 2048with-tunnel
+id : 0dd3c613-1e4a-4c35-9c41-d47a5171230c
+
+# 터널 생성
+cloudflared tunnel create 2048with-tunnel
+
+# 터널링 등록
+cloudflared tunnel route dns 2048with-tunnel 2048with.site
+
+# 터널링 시작
+cloudflared tunnel run 2048with-tunnel
+
+# 노트북 로컬서버 실행
+node C:\Users\SKTelecom\Desktop\YK\Dev\2048with\2048with_Server\index.js
+
+# ngrok 터널링 시작
+ngrok http 8080
